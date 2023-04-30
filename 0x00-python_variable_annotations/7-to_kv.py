@@ -6,9 +6,10 @@ The second element is the square of the int/float v
 and should be annotated as a float.
 """
 
+
 import typing
 
 
-def to_kv(k: str, v: typing.Union[float, int]) -> typing.Tuple[str, float]:
-    """Returns a tuple of the string & square of v as float"""
+def to_kv(k: str, v: typing.Union[int, float]) -> typing.Tuple[str, float]:
+    """returns a tuple of the string & square of v as float"""
     return (k, float(v * v))
