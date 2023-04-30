@@ -9,6 +9,6 @@ and should be annotated as a float.
 import typing
 
 
-def to_kv(k: str, v: (typing.Union(float, int))) -> tuple(str, float):
+def to_kv(k: str, v: typing.Union[float, int]) -> typing.Tuple[str, float]:
     """Returns a tuple of the string & square of v as float"""
     return (k, float(v * v))
