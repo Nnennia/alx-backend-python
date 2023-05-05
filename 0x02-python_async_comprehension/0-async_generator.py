@@ -13,7 +13,7 @@ async def async_generator() -> AsyncGenerator[float, None]:
     between 0 and 10.
     This function loops 10 times, each time
     asynchronously waiting 1 second."""
-    async for _ in range(10):
+    for _ in range(10):
         await asyncio.sleep(1)
         num = random.random() * 10
         yield num
