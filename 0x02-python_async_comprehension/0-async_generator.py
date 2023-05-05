@@ -5,10 +5,10 @@ then yield a random number between 0 and 10. Use the random module. """
 
 import asyncio
 import random
-from typing import Generator
+from typing import Generator, AsyncGenerator
 
 
-async def async_generator() -> Generator[float, None]:
+async def async_generator() -> AsyncGenerator[float, None, None]:
     """Async generator that yields random numbers
     between 0 and 10.
     This function loops 10 times, each time
